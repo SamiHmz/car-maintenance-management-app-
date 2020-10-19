@@ -1,0 +1,217 @@
+import React, { Component } from "react";
+import { Bar, Doughnut } from "react-chartjs-2";
+class Dashboard extends Component {
+  state = {};
+
+  data_carnurant = {
+    labels: [
+      "janv.",
+      "févr.",
+      "mars",
+      "avr.",
+      "mai",
+      "juin",
+      "juill.",
+      "août",
+      "sept.",
+      "oct.",
+      "nov.",
+      "déc.",
+    ],
+    datasets: [
+      {
+        label: "Cout de carburant en DA par mois",
+        data: [
+          1200000,
+          1902222,
+          1000000,
+          1223330,
+          5000000,
+          1300000,
+          1200000,
+          1902222,
+          1000000,
+          1223330,
+          5000000,
+          1300000,
+        ],
+        backgroundColor: "#fcbf1e",
+        borderWidth: 1,
+      },
+    ],
+  };
+  data_maintenance = {
+    labels: [
+      "janv.",
+      "févr.",
+      "mars",
+      "avr.",
+      "mai",
+      "juin",
+      "juill.",
+      "août",
+      "sept.",
+      "oct.",
+      "nov.",
+      "déc.",
+    ],
+    datasets: [
+      {
+        label: "Cout de maintenance en DA par mois",
+        data: [
+          1200000,
+          1902222,
+          1000000,
+          1223330,
+          1902222,
+          1000000,
+          1223330,
+          5000000,
+          1300000,
+          5000000,
+          1300000,
+          1200000,
+        ],
+        backgroundColor: "#40bad5",
+        borderWidth: 1,
+      },
+    ],
+  };
+  data_total = {
+    labels: [
+      "janv.",
+      "févr.",
+      "mars",
+      "avr.",
+      "mai",
+      "juin",
+      "juill.",
+      "août",
+      "sept.",
+      "oct.",
+      "nov.",
+      "déc.",
+    ],
+    datasets: [
+      {
+        label: "Cout total en DA par mois",
+        data: [
+          1200000,
+          1902222,
+          1000000,
+          1223330,
+          5000000,
+          1902222,
+          1000000,
+          1223330,
+          1300000,
+          5000000,
+          1300000,
+          1200000,
+        ],
+        backgroundColor: "#035aa6",
+        borderWidth: 1,
+      },
+    ],
+  };
+  data_status = {
+    labels: ["Active", "En Panne", "Hors service"],
+    datasets: [
+      {
+        label: "Nombre de panne par mois",
+        data: [40, 20, 50],
+        backgroundColor: ["#79d70f", "#d32626", "#ffd31d"],
+        borderWidth: 1,
+      },
+    ],
+  };
+  data_panne = {
+    labels: [
+      "janv.",
+      "févr.",
+      "mars",
+      "avr.",
+      "mai",
+      "juin",
+      "juill.",
+      "août",
+      "sept.",
+      "oct.",
+      "nov.",
+      "déc.",
+    ],
+    datasets: [
+      {
+        label: "Nombre de panne par mois",
+        data: [40, 20, 50, 5, 17, 34, 6, 9, 23, 35, 28, 8],
+        backgroundColor: "#120136",
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  render() {
+    const options = {
+      maintainAspectRatio: false,
+      animation: {
+        duration: 3000,
+      },
+      legend: {
+        labels: {
+          fontFamily: "Lato",
+          color: "red",
+        },
+      },
+    };
+    return (
+      <div className="page-content">
+        <h1 class=" dark">Dashboard</h1>
+        <div id="dashboard">
+          <div className="myChart">
+            <Bar
+              data={this.data_carnurant}
+              options={options}
+              height={250}
+              width={150}
+            />
+          </div>
+          <div className="myChart">
+            <Bar
+              data={this.data_maintenance}
+              options={options}
+              height={250}
+              width={150}
+            />
+          </div>
+          <div className="myChart">
+            <Bar
+              data={this.data_total}
+              options={options}
+              height={250}
+              width={150}
+            />
+          </div>
+          <div className="myChart">
+            <Bar
+              data={this.data_panne}
+              options={options}
+              height={250}
+              width={150}
+            />
+          </div>
+          {/* <div className="myChart">
+            <h1>Status des vehicule</h1>
+            <Doughnut
+              data={this.data_status}
+              options={options}
+              height={250}
+              width={250}
+            />
+          </div> */}
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Dashboard;

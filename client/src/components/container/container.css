@@ -1,0 +1,174 @@
+#container {
+  width: 1300px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 200px;
+}
+
+/***********************  content **********/
+
+.page-content {
+  padding: 40px;
+  background-color: #f4f5f9;
+  margin-top: 100px;
+  min-height: 100%;
+}
+
+.page-content h1 {
+  display: inline;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #60866b;
+}
+.page-content table {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 5px 5px 10px -5px #9fa5ba;
+}
+.page-content table {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 90%;
+  text-align: start;
+  border-collapse: collapse;
+}
+
+.page-content table thead tr {
+  height: 60px;
+}
+.page-content table tr {
+  height: 90px;
+}
+
+.page-content table th,
+td {
+  text-align: start;
+  padding-left: 20px;
+}
+.page-content td {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.page-content table .date {
+  background-color: #f4f5f9;
+  height: 50px;
+  padding-left: 40px;
+}
+
+.page-content table .car-info {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-content table .car-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+}
+.page-content .first-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-content .btn {
+  margin-left: 20px;
+}
+.page-content i {
+  margin-left: 20px;
+}
+
+/**************************ListVehicule Style************************/
+
+#list-vehicule-item {
+  background-color: white;
+  padding: 20px;
+  height: 160px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 15px;
+  margin: 50px auto 0 auto;
+  box-shadow: 5px 5px 10px -5px #9fa5ba;
+}
+
+#list-vehicule-item > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+#list-vehicule-item #car {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#list-vehicule-item #car #car-infos {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+#list-vehicule-item > a {
+  align-self: flex-end;
+  margin-right: 50px;
+}
+#list-vehicule-item h5 {
+  margin-bottom: 5px;
+}
+#list-vehicule-item h4 {
+  margin-left: 120px;
+}
+
+#list-vehicule-item #car-infos span {
+  color: #60866b;
+  margin-right: 20px;
+}
+
+/************************** Form Style ***********************/
+
+.form-container {
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+/* ****************************** dashnoard*******************************
+#dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-around;
+  margin: 20px auto 0 auto;
+  min-height: 100%;
+}
+.myChart {
+  margin: auto;
+  width: 45%;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.03);
+}
+.myChart h1 {
+  border: none;
+  font-size: 20px;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+} */

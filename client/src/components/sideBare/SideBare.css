@@ -1,0 +1,40 @@
+#side-bare {
+  width: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 100px;
+  position: fixed;
+  left: 0;
+}
+
+#side-bare .logo {
+  height: 200px;
+  width: 150px;
+}
+#side-bare #menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 25px;
+}
+
+#side-bare #menu .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#side-bare #menu .item .icon {
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  width: 60px;
+}
+
+#side-bare #menu .item .icon i {
+  padding: 0;
+  margin: 0;
+}

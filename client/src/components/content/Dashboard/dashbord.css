@@ -1,0 +1,74 @@
+#dashboard {
+  display: flex;
+  flex-direction: column;
+}
+#dashboard #dash-head {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#dashboard #dash-head .indicator {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 31%;
+  height: 120px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#dashboard #dash-head .indicator:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#dashboard #dash-head .indicator img {
+  width: 60px;
+  height: 60px;
+}
+
+#dashboard #dash-head .indicator .text {
+  display: flex;
+  flex-direction: column;
+}
+
+#dashboard #dash-head .indicator .text .number {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(55, 61, 63);
+}
+#dash-head .indicator .text .head {
+  font-size: 14px;
+  font-weight: 400;
+  fill: rgb(55, 61, 63);
+}
+
+.char-back {
+  padding: 10px;
+  background: #ffff;
+  width: 49%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-bottom: 50px;
+}
+
+.chart-group {
+  display: flex;
+  justify-content: space-between;
+}
+.full-width {
+  width: 100%;
+}
+
+#suivi {
+  font-size: 25px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.date {
+  height: 20px;
+}

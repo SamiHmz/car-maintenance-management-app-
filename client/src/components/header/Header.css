@@ -1,0 +1,86 @@
+#header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  height: 100px;
+  width: 80%;
+}
+
+#header .profile-pic {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#header i {
+  font-size: 25px;
+}
+#header .fa-chevron-down {
+  margin-right: 10px;
+}
+#header h5 {
+  font-size: 15px;
+}
+#header .fa-search {
+  margin: 0;
+}
+#header input {
+  width: 50%;
+  height: 35px;
+  padding-left: 35px;
+  margin-right: 150px;
+  border-radius: 40px;
+  border: 2px solid rgb(159, 165, 186, 0.5);
+  outline: none;
+}
+
+#header input::placeholder {
+  color: #9fa5ba;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+#header h5 {
+  margin-right: 10px;
+}
+
+#header .fa-search {
+  font-size: 20px;
+  position: absolute;
+  left: 30px;
+  align-self: center;
+}
+
+#header .military {
+  cursor: pointer;
+}
+
+#header #notification {
+  padding-top: 12px;
+}
+
+#header .edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 120px;
+  width: 120px;
+  height: 60px;
+  background-color: #4a4a4a;
+}
+#header h5 {
+  cursor: pointer;
+}
+
+#header .menu {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}

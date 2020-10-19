@@ -1,0 +1,70 @@
+#basic-info {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#basic-info img {
+  height: 150px;
+  width: 200px;
+}
+
+#basic-info .info {
+  font-size: 17px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#basic-info .col {
+  display: flex;
+  flex-direction: column;
+}
+#basic-info .col > span {
+  margin-bottom: 12px;
+}
+
+#basic-info .indicateur-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+#basic-info .indicateur-container .indicateur {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  width: 22%;
+  height: 100px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#basic-info .indicateur-container .indicateur:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#basic-info .indicateur-container .indicateur > div {
+  display: flex;
+  flex-direction: column;
+}
+#basic-info .indicateur-container .indicateur img {
+  width: 50px;
+  height: 50px;
+}
+#basic-info .indicateur-container .indicateur .primary {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(55, 61, 63);
+}
+#basic-info .indicateur-container .indicateur .second {
+  font-size: 14px;
+  font-weight: 400;
+  fill: rgb(55, 61, 63);
+}

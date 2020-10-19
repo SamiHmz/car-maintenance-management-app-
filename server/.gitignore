@@ -1,0 +1,13 @@
+node_modules/
+sql/
+##logs
+Logs
+*.log
+npm-debug.log*
+notif.js
+.VSCodeCounter
+
+##Env 
+
+
+.npm

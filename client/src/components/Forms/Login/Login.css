@@ -1,0 +1,39 @@
+#logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#Login {
+  background-color: #f6f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Login .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #ffffff;
+  width: 30%;
+  padding: 50px;
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+    0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.03);
+}
+
+#Login button {
+  width: 100%;
+}
+
+#Login h1 {
+  align-self: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#Login h2 {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  font-size: 15px;
+  margin-top: 5px;
+}
